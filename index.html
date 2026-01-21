@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function Password() {
+            var pass = document.getElementById("pass");
+
+            if (pass.type === "password") {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h3>Password Visibility Toggle</h3>
+
+    <label>Password:</label>
+    <input type="password" id="pass">
+    <br><br>
+
+    <input type="checkbox" onclick="Password()">
+    <label>Show Password</label>
+</body>
+</html>
